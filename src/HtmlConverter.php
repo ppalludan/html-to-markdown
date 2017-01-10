@@ -228,7 +228,7 @@ class HtmlConverter
 
         $markdown = trim($markdown, "\n\r\0\x0B");
 
-        $markdown = preg_replace('/\s{3,}/',"\n", $markdown);
+        $markdown = preg_replace('/\s{3,}/',"\n\n", $markdown);
 
         return $markdown;
     }
